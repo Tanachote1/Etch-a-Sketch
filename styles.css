@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.container{
+    display: flex;
+    flex: 1 0;
+    margin: 0px 470px 0px 470px;
+    border: 2px solid black;
+    height: 500px;
+    width:  500px;
+    border-radius: 10px;
+}
+
+.row, .column{
+    border: 2px solid black;
+    width: 100%;
+}
+
+
+
