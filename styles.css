@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 0;
     margin: 0;
 }
@@ -8,23 +8,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 100px;
 }
 
-.container{
+body{
+    background-color: aliceblue;
+}
+
+#sketch-area{
     display: flex;
-    flex: 1 0;
-    margin: 0px 470px 0px 470px;
-    border: 2px solid black;
-    height: 500px;
-    width:  500px;
-    border-radius: 10px;
+    background-color: white;
+    margin: 100px auto;
+    margin-top: -1px;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px rgba(0,170,255,0.034);
 }
 
-.row, .column{
-    border: 2px solid black;
-    width: 100%;
+.cell{
+    border: 1px solid whitesmoke;
 }
-
-
-
