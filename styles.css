@@ -68,3 +68,17 @@ body{
     background: #04AA6D;
     cursor: pointer;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.reset{
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 15px;
+}

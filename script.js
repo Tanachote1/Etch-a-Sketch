@@ -19,6 +19,7 @@ const sketchArea = document.querySelector('#sketch-area');
 const sliderContainer = document.querySelector('#slider-container');
 const slider = document.querySelector('#slider');
 const sliderValue = document.querySelector('#slider-value');
+const resetButton = document.querySelector('.reset');
 
 // This show Resolution
 sliderValue.textContent = `${slider.value} x ${slider.value} (Resolution)`;
@@ -53,6 +54,14 @@ function removeGridCells(){
         sketchArea.removeChild(sketchArea.firstChild);
     }
 }
+
+// This resetGrid by remove then create
+function resetGrid() {
+    removeGridCells();
+    createGridCells(16);
+}
+
+resetButton.addEventListener('click', resetGrid);
 
 // This change gridCell
 slider.oninput = function () {
