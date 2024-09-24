@@ -27,7 +27,7 @@ sliderValue.textContent = `${slider.value} x ${slider.value} (Resolution)`;
 sketchArea.style.width = sketchArea.style.height = `${GRIDSIDE}px`;
 
 function eraserCells(){
-    
+    hi
 }
 
 // This hover background color
