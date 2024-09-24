@@ -41,15 +41,25 @@ function createGridCells(squaresPerSide){
         gridCell.classList.add("cell");
 
         sketchArea.appendChild(gridCell);
-
+        // 'This' what it came from 
         gridCell.addEventListener('mouseover', changeBackroundColor);
     };
 };
+
+// This function remove current cell
 
 function removeGridCells(){
     while (sketchArea.firstChild){
         sketchArea.removeChild(sketchArea.firstChild);
     }
+}
+
+// This change gridCell
+slider.oninput = function () {
+    let txt = `${this.value} X ${this.value} (Resoultion)`;
+    sliderValue.textContent =txt;
+    removeGridCells();
+    createGridCells(this.value);
 }
 
 createGridCells(16);
