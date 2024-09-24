@@ -10,7 +10,9 @@
     
 // };
 
+// const border
 const GRIDSIDE = 600;
+// let cell
 let squaresPerSide = 16;
 
 const sketchArea = document.querySelector('#sketch-area');
@@ -18,13 +20,16 @@ const sliderContainer = document.querySelector('#slider-container');
 const slider = document.querySelector('#slider');
 const sliderValue = document.querySelector('#slider-value');
 
+// This show Resolution
 sliderValue.textContent = `${slider.value} x ${slider.value} (Resolution)`;
 sketchArea.style.width = sketchArea.style.height = `${GRIDSIDE}px`;
 
+// This hover background color
 function changeBackroundColor() {
     this.style.backgroundColor = "black";
 }
 
+// This create cell
 function createGridCells(squaresPerSide){
     const numOfSquares = (squaresPerSide * squaresPerSide)
     const widthOrHeight = `${(GRIDSIDE / squaresPerSide) - 2}px`;
@@ -47,4 +52,4 @@ function removeGridCells(){
     }
 }
 
-createGridCells(4);
+createGridCells(16);
