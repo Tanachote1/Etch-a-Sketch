@@ -20,10 +20,15 @@ const sliderContainer = document.querySelector('#slider-container');
 const slider = document.querySelector('#slider');
 const sliderValue = document.querySelector('#slider-value');
 const resetButton = document.querySelector('.reset');
+const eraserButton = document.querySelector('.eraser');
 
 // This show Resolution
 sliderValue.textContent = `${slider.value} x ${slider.value} (Resolution)`;
 sketchArea.style.width = sketchArea.style.height = `${GRIDSIDE}px`;
+
+function eraserCells(){
+    
+}
 
 // This hover background color
 function changeBackroundColor() {

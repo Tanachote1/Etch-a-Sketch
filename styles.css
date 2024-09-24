@@ -76,9 +76,10 @@ body{
     padding: 5px;
 }
 
-.reset{
+.reset, .eraser{
     border: none;
     cursor: pointer;
     padding: 15px;
     border-radius: 15px;
+    margin: auto 10px;
 }
