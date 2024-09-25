@@ -26,13 +26,10 @@ const eraserButton = document.querySelector('.eraser');
 sliderValue.textContent = `${slider.value} x ${slider.value} (Resolution)`;
 sketchArea.style.width = sketchArea.style.height = `${GRIDSIDE}px`;
 
-function eraserCells(){
-    hi
-}
-
 // This hover background color
 function changeBackroundColor() {
     this.style.backgroundColor = "black";
+    drag = true;
 }
 
 // This create cell
@@ -49,6 +46,7 @@ function createGridCells(squaresPerSide){
         sketchArea.appendChild(gridCell);
         // 'This' what it came from 
         gridCell.addEventListener('mouseover', changeBackroundColor);
+
     };
 };
 
